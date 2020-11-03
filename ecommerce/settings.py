@@ -5,7 +5,7 @@ import django
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'mt%#h6_bss+^d&jigjg&$8o971tbq*x=3rsf1r24a1xfwos!6$'
+SECRET_KEY = '**************'
 
 DEBUG = True
 
