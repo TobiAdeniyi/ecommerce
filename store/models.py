@@ -14,8 +14,10 @@ class Customer(models.Model):
 
 class Product(models.Model):
 	name = models.CharField(max_length=200)
-	price = models.FloatField()
-	digital = models.BooleanField(default=False,null=True, blank=True)
+	price = models.FloatField(null=True)
+	weight = models.FloatField(null=True)
+	colour = models.CharField(max_length=200)
+	euler_characteristic = models.IntegerField()
 	image = models.ImageField(null=True, blank=True)
 
 	def __str__(self):
@@ -27,7 +29,7 @@ class Product(models.Model):
 			url = self.image.url
 		except:
 			url = ''
-		return url
+		return "/static"+url+".jpg"
 
 
 class Order(models.Model):
