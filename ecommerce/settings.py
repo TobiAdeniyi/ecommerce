@@ -19,13 +19,13 @@ INSTALLED_APPS = [
     'ecommerce',
     'static',
 
-    'django.contrib.admin',
     'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
+    'django.contrib.contenttypes',
 
     'allauth',
     'allauth.account',
@@ -89,7 +89,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'StoreDB',
         'USER': 'postgres',
-        'PASSWORD': '*******',
+        'PASSWORD': 'Radio321!',
         'HOST': 'localhost',
     }
 }
